@@ -1,9 +1,11 @@
 {
   "$schema": "https://github.com/adrianmo/azure-starter-templates/samples/schema.json",
-  "samples": [{
-    "id": "managed-storage-account",
-    "title": "Managed Storage Account",
-    "description": "Manage a storage account",
-    "tags": ["storage accounts", "simple"]
-  }]
+  "samples": [
+    {
+      "id": "managed-storage-account",
+      "title": "Managed Storage Account",
+      "description": "Manage a storage account",
+      "tags": ["storage accounts", "simple"]
+    }
+  ]
 }

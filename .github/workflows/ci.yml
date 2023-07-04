@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Validate samples index file
+        uses: OrRosenblatt/validate-json-action@0.1.0
+        with:
+          schema: samples/schema.json
+          jsons: samples/index.json
