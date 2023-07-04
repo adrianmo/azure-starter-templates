@@ -19,4 +19,4 @@ jobs:
         uses: OrRosenblatt/validate-json-action@0.1.0
         with:
           schema: samples/schema.json
-          jsons: samples/index.json
+          json: samples/index.json
