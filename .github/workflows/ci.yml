@@ -1,4 +1,4 @@
-name: CI
+name: Check samples
 
 on:
   push:
@@ -15,22 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Validate samples index file
-        uses: docker://orrosenblatt/validate-json-action:latest
-        env:
-          INPUT_SCHEMA: samples/schema.json
-          INPUT_JSONS: samples/index.json
+      - name: Validate JSON schema - index file
+        run: jsonschema -i samples/index.json samples/schema.json
 
       - name: Validate samples
-        run: |
-          set -euo pipefail
-          samples=$(jq '.samples[] | @base64') <<< samples/index.json
-          for sample_b64 in ${samples}; do
-            _jq() {
-                echo "${sample_b64}" | base64 --decode | jq -r "$1"
-            }
-            sample_id=$(_jq '.id')
-            if [ ! -d "samples/${samples_id}" ]; then
-                >&2 echo "Sample directory 'samples/${samples_id}' does not exist"
-            fi
-          done
+        run: ./.github/scripts/validate-samples.sh
