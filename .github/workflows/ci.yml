@@ -19,4 +19,4 @@ jobs:
         run: jsonschema -i samples/index.json samples/schema.json
 
       - name: Validate samples
-        run: ./.github/scripts/validate-samples.sh
+        run: bash ./.github/scripts/validate-samples.sh
