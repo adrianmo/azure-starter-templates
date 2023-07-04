@@ -6,12 +6,6 @@
       "title": "Managed Storage Account",
       "description": "Manage a storage account",
       "tags": ["storage accounts", "simple"]
-    },
-    {
-      "id": "managed-virtual-machine",
-      "title": "Managed Virtual Machine",
-      "description": "Manage a virtual machine",
-      "tags": ["virtual machines", "simple"]
     }
   ]
 }
