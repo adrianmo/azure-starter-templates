@@ -5,7 +5,7 @@
       "id": "managed-storage-account",
       "title": "Managed Storage Account",
       "description": "Manage a storage account",
-      "tags": ["storage accounts", "simple"]
+      "tags": []
     }
   ]
 }
