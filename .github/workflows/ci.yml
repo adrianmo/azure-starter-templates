@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Validate samples index file
-        uses: OrRosenblatt/validate-json-action@0.1.0
+        uses: docker://orrosenblatt/validate-json-action:latest
         with:
           schema: samples/schema.json
           json: samples/index.json
