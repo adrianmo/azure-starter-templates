@@ -17,6 +17,6 @@ jobs:
 
       - name: Validate samples index file
         uses: docker://orrosenblatt/validate-json-action:latest
-        with:
-          schema: samples/schema.json
-          json: samples/index.json
+        env:
+          INPUT_SCHEMA: samples/schema.json
+          INPUT_JSON: samples/index.json
