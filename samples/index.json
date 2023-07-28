@@ -5,19 +5,22 @@
       "id": "managed-storage-account",
       "title": "Managed Storage Account",
       "description": "Manage a storage account",
-      "tags": ["storage accounts"]
+      "tags": ["storage accounts"],
+      "image": "images/preview.jpeg"
     },
     {
       "id": "managed-virtual-machine",
       "title": "Managed Virtual Machine",
       "description": "Manage a virtual machine",
-      "tags": ["virtual machines"]
+      "tags": ["virtual machines"],
+      "image": "images/preview.jpeg"
     },
     {
       "id": "managed-aks",
       "title": "Managed AKS",
       "description": "Manage a AKS cluster",
-      "tags": ["aks", "kubernetes"]
+      "tags": ["aks", "kubernetes"],
+      "image": "images/preview.jpeg"
     }
   ]
 }
