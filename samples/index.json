@@ -4,21 +4,21 @@
     {
       "id": "managed-storage-account",
       "title": "Managed Storage Account",
-      "description": "Manage a storage account",
+      "description": "This sample deploys a managed storage account. It also deploys a virtual network, public IP address and a network security group.",
       "tags": ["storage accounts"],
       "image": "images/preview.jpeg"
     },
     {
       "id": "managed-virtual-machine",
       "title": "Managed Virtual Machine",
-      "description": "Manage a virtual machine",
+      "description": "This sample deploys a managed virtual machine. It also deploys a virtual network, public IP address and a network security group.",
       "tags": ["virtual machines"],
       "image": "images/preview.jpeg"
     },
     {
       "id": "managed-aks",
       "title": "Managed AKS",
-      "description": "Manage a AKS cluster",
+      "description": "This sample deploys a managed AKS cluster. It also deploys a virtual network, public IP address and a network security group.",
       "tags": ["aks", "kubernetes"],
       "image": "images/preview.jpeg"
     }
