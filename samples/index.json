@@ -21,6 +21,13 @@
       "description": "This sample deploys a managed AKS cluster. It also deploys a virtual network, public IP address and a network security group.",
       "tags": ["aks", "kubernetes"],
       "image": "images/preview.jpeg"
+    },
+    {
+      "id": "existing-vnet",
+      "title": "Existing VNet",
+      "description": "This sample deploys a AKS cluster into an existing virtual network.",
+      "tags": ["aks", "vnet"],
+      "image": "images/preview.jpeg"
     }
   ]
 }
