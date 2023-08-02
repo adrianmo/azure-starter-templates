@@ -1,0 +1,33 @@
+{
+  "$schema": "https://github.com/adrianmo/azure-starter-templates/samples/schema.json",
+  "samples": [
+    {
+      "id": "managed-storage-account",
+      "title": "Managed Storage Account",
+      "description": "This sample deploys a managed storage account. It also deploys a virtual network, public IP address and a network security group.",
+      "tags": ["storage accounts"],
+      "image": "images/preview.jpeg"
+    },
+    {
+      "id": "managed-virtual-machine",
+      "title": "Managed Virtual Machine",
+      "description": "This sample deploys a managed virtual machine. It also deploys a virtual network, public IP address and a network security group.",
+      "tags": ["virtual machines"],
+      "image": "images/preview.jpeg"
+    },
+    {
+      "id": "managed-aks",
+      "title": "Managed AKS",
+      "description": "This sample deploys a managed AKS cluster. It also deploys a virtual network, public IP address and a network security group.",
+      "tags": ["aks", "kubernetes"],
+      "image": "images/preview.jpeg"
+    },
+    {
+      "id": "existing-vnet",
+      "title": "Existing VNet",
+      "description": "This sample deploys a AKS cluster into an existing virtual network.",
+      "tags": ["aks", "vnet"],
+      "image": "images/preview.jpeg"
+    }
+  ]
+}

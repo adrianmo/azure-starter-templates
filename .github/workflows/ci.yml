@@ -1,0 +1,25 @@
+name: Check samples
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Validate JSON schema - index file
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: samples/schema.json
+          INPUT_JSONS: samples/index.json
+
+      - name: Validate samples
+        run: bash ./.github/scripts/validate-samples.sh
