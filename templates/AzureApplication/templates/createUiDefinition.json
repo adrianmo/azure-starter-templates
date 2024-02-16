@@ -12,6 +12,7 @@
           {
             "name": "storageAccounts",
             "type": "Microsoft.Storage.MultiStorageAccountCombo",
+            "tooltip": "Select the storage account type and name prefix. The name prefix will be used to generate unique storage account names.",
             "label": {
               "prefix": "Storage account name prefix",
               "type": "Storage account type"
@@ -34,7 +35,8 @@
           {
             "name": "tagsByResource",
             "type": "Microsoft.Common.TagsByResource",
-            "resources": ["Microsoft.Storage/storageAccounts"]
+            "resources": ["Microsoft.Storage/storageAccounts"],
+            "toolTip": "Select the tags to apply to the storage accounts."
           }
         ]
       }

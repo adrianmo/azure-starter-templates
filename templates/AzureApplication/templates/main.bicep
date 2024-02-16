@@ -1,19 +1,18 @@
-//parameters for creating a storage account
+param location string = resourceGroup().location
 param storageAccountNamePrefix string
-
 param storageAccountType string
-
-param storageAccountLocation string = resourceGroup().location
+param tagsByResource object = {}
 
 var storageAccountName = '${storageAccountNamePrefix}${uniqueString(resourceGroup().id)}'
 
 resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   name: storageAccountName
-  location: storageAccountLocation
+  location: location
   kind: 'StorageV2'
   sku: {
     name: storageAccountType
   }
+  tags: contains(tagsByResource, 'storageAccount') ? tagsByResource.storageAccount : {}
 }
 
 output storageAccountEndpoint string = storageAccount.properties.primaryEndpoints.blob
