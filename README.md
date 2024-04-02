@@ -1,3 +1,5 @@
 # azure-starter-templates
 
-This repository contains a set of starter templates for Azure Resource Manager (ARM) templates. These templates are intended to be used as a starting point for building your own templates. They are not intended to be used directly in production as-is.
+This repository is the temporary hosting for the project templates and samples that are used in the Cloud Solution Toolkit.
+
+Once the Cloud Solution Toolkit is published, the contents of this repository will be migrated to there.
